@@ -90,3 +90,10 @@ function tryAgain(){
     azzeraConto();
     popUp.style.display = 'none';
 }
+
+document.addEventListener('keydown', function(event) {
+    if (event.code === 'Space') {
+        event.preventDefault(); // previene lo scroll della pagina
+        funzioneConto();
+    }
+});
