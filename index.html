@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>SUPER CLICK COUNTER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="header">
+            <div class="titolo">CLICK COUNTER</div>
+        </div>
+        <div class="page">
+            <div class="button-and-count">
+                <div class="time">
+                    <div class="secondi-tempo">00</div>
+                    <div>.</div>
+                    <div class="centesimi">00</div>
+                </div>
+                <div class="bottoni-tempo">
+                    <button onclick="cliccaBottone(5)" class="bottoni-tempo5">5 secondi</button>
+                    <button onclick="cliccaBottone(10)" class="bottoni-tempo10">10 secondi</button>
+                    <button onclick="cliccaBottone(30)" class="bottoni-tempo30">30 secondi</button>
+                </div>
+                <button onclick="funzioneConto()" class="count-btn">cliccami</button>
+                <div class="conto">0</div>
+                <button onclick="azzeraConto()" class="azzera-btn">azzera</button>
+                <div class="pu-finetempo">
+                    <p>Tempo: <span id="tempo-scelto">0</span></p>
+                    <p>Click totali: <span id="c-totali">0</span></p>
+                    <p>Click al secondo: <span id="cps">0</span></p>
+                    <button onclick="tryAgain()" class="try-again">Riprova</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+</html>
