@@ -79,6 +79,9 @@ html, body{
     height: 10vw;
     width: 30vw;
     margin-top: 15vw;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
 }
 
 .count-stats{
